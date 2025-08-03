@@ -3,7 +3,17 @@ Dever ser prototipada da seguinte maneira:
 void ft_is_negative(int n);
 
 vim ft_is_negative(int n);
-#header 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_negative                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/03 12:00:00 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/03 12:00:00 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include <unistd.h>
 void ft_is_negative(int n)
 {
