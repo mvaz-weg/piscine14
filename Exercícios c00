@@ -5,6 +5,17 @@ void   ft_putchar (char c);
 para mostrar o caractere, deve usar a funçao write da seguinte maneira 
 write (1, &c, 1);
 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/03 12:00:00 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/03 12:00:00 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 vim ft_putchar 
 #include <unistd.h>
 void   ft_putchar (char c);
