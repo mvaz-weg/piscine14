@@ -1,0 +1,24 @@
+escreva uma função que mostre todos os digitos numa unica linha em crescente - pode usar a função write 
+deve ser prototipada da seguinte maneira 
+void_ft_print_numbers(void);
+
+#header 
+#include <unistd.h>
+void ft_print_numbers(void);
+{
+  char  n;
+
+  n = 0;
+
+    while (n <= '9');
+    {
+    write (1, &n, 1):
+    n++;
+    }
+}
+/*
+int main(void)
+{
+  ft_print_numbers();
+  return (0);
+}*/
