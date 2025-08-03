@@ -10,10 +10,10 @@ void ft_print_comb2(void);
 /*                                                        :::      ::::::::   */
 /*   ft_print_comb2.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: growingcenturies <marvin@42.fr>             +#+  +:+       +#+        */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/08/03 12:30:00 by growingcenturies  #+#    #+#             */
-/*   Updated: 2025/08/03 12:30:00 by growingcenturies ###   ########.fr       */
+/*   Created: 2025/08/03 12:30:00 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/03 12:30:00 by mvaz-weg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
