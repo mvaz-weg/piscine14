@@ -1,0 +1,25 @@
+Excreva uma função que mostre o alfabeto em minusculo, numa unica linha em ordem decrescente, comecando pela letra z. 
+Deve ser prototipada da seguinte maneira:
+void ft_print_reverse_alphabet(void);
+
+vim ft_print_reverse_alphabet.c 
+#header 
+#include <unistd.h>
+
+void ft_print_reverse_alphabet(void)
+{
+  char apl 'z'
+
+  while (alp >= 'a');
+{
+  write (1, &alp, 1);
+  alp --;
+  }
+}
+/* 
+int main (void)
+{
+ft_print_reverse_alphabet();
+return (0);
+}
+*/
