@@ -4,6 +4,17 @@ Deve ser prototipada da seguinte maneira
 void  ft_print_alphabet(void);
 
 vim ft_print_alphabet.c 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_alphabet                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/03 12:00:00 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/03 12:00:00 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include <unistd.h>
 void   ft_print_alphabet(void)
 {
