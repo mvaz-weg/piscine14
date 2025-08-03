@@ -1,8 +1,17 @@
 escreva uma função que mostre todos os digitos numa unica linha em crescente - pode usar a função write 
 deve ser prototipada da seguinte maneira 
 void_ft_print_numbers(void);
-
-#header 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb.c                                    :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/03 12:00:00 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/03 12:00:00 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include <unistd.h>
 void ft_print_numbers(void);
 {
