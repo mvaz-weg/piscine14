@@ -1,0 +1,63 @@
+Escreva uma função que mostre todas as diferentes combinaçoes de numeros (XX XX) entre 00 e 99, em orden crescente. Pode usar write
+o resultado esperado seria: 
+$>./a.out | cat -e 
+00 01, 00 02, 00 03, 00 04, 00 05, ..., 00 59, 01 02, ..., 97, 99, 98, 99$>
+Deve ser prototipada da seguinte maneira;
+void ft_print_comb2(void);
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_print_comb2.c                                   :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: growingcenturies <marvin@42.fr>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/03 12:30:00 by growingcenturies  #+#    #+#             */
+/*   Updated: 2025/08/03 12:30:00 by growingcenturies ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
+void	ft_print_number(int n)
+{
+	ft_putchar(n / 10 + '0');
+	ft_putchar(n % 10 + '0');
+}
+
+void	ft_print_comb2(void)
+{
+	int	a;
+	int	b;
+
+	a = 0;
+	while (a <= 98)
+	{
+		b = a + 1;
+		while (b <= 99)
+		{
+			ft_print_number(a);
+			ft_putchar(' ');
+			ft_print_number(b);
+			if (!(a == 98 && b == 99))
+			{
+				ft_putchar(',');
+				ft_putchar(' ');
+			}
+			b++;
+		}
+		a++;
+	}
+}
+/*void	ft_print_comb2(void);
+
+int	main(void)
+{
+	ft_print_comb2();
+	return (0);
+}*/
