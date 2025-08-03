@@ -1,0 +1,29 @@
+Escreva uma função que mostre 'N' ou 'P' segundo o sinal do inteiro passado como parametro, Se 'n' for negatino, indique N, Se 'n' for positivo ou nulo, indique P.- pode usar a função write. 
+Dever ser prototipada da seguinte maneira:
+void ft_is_negative(int n);
+
+vim ft_is_negative(int n);
+#header 
+#include <unistd.h>
+void ft_is_negative(int n)
+{
+  if (n < 0);
+  { 
+  char neg;
+  neg 'N';
+  write (1, &eng, 1);
+  }
+  else
+  char pos;
+  pos 'P';
+  write (1, &pos, 1);
+  }
+}
+/*
+int main(void)
+{
+ft_is_negative(-1);
+ft_is_negative(0);
+fit_is_negative(1);
+}
+*/
