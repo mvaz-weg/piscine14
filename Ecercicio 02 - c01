@@ -1,0 +1,42 @@
+Escreva uma função que troque o conteudo de dois inteiros cujos endereços são passados como parâmetro.
+Deverá ser prototipada da seguinte maneira:
+void  ft_swap(int *a, int *b);
+
+vim ft_swap.c
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft.swap.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.fr>          +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/03 10:42:00 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/03 10:42:00 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+
+void ft_swap(int*a, int *b)
+{
+  int tmp;
+
+tmp = *a;
+*a = *b;
+*b = tmp;
+}
+
+*/
+int main (void) 
+{
+  int x;
+  int y;
+
+x = 2;
+y = 3;
+
+ft_swap(&x, &y);
+printf("%d\n", x);
+printf("%d", y);
+return (0);
+} 
