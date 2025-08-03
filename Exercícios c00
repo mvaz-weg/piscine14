@@ -6,6 +6,7 @@ para mostrar o caractere, deve usar a funçao write da seguinte maneira
 write (1, &c, 1);
 
 vim ft_putchar 
+#include <unistd.h>
 void   ft_putchar (char c);
 {
 write (1, &c, 1);
