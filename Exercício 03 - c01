@@ -1,0 +1,41 @@
+Escreva uma função ft_div_mod que tenha a seguinte protatipagem:
+void ft_div_mod(int a, int b, int *div, int *mod);
+a funçã odivide os dois parâmentros a e b e armazenam o resultado no inteiro apontado por div. ela também armazena o resto da divisão de a e b no inteiro apontado por mod.
+
+vim ft_div_mod.c
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_div_mod.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/03 10:42:00 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/03 10:42:00 by mvaz-weg ###           ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <studio.h>
+
+void ft_div_mod(int a, iny b, int *div, int*mod);
+{
+  *div = a/b;
+  *mod = a%b;
+}
+
+*/
+int main (void)
+{
+    int a;
+    int b;
+    int div;
+    int mod;
+
+a = 10;
+b = 5;
+
+ft_div_mod(a, b, div, mod);
+printf("%d\n", div);
+printf("%d", mod);
+return (0);
+*/
