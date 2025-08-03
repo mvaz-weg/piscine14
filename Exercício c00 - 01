@@ -1,0 +1,21 @@
+ft_print_alphabet.c 
+Esxreva uma gfunção que mostre o alfabeto em minusculo, numa unica linha, em ordem crescente, comecando pela letra 'a'.
+Deve ser prototipada da seguinte maneira 
+void  ft_print_alphabet(void);
+
+vim ft_print_alphabet.c 
+#include <unistd.h>
+void   ft_print_alphabet(void)
+{
+char alp 'a';
+
+while (alp <= 'z')
+
+write (1, &alp, 1);
+alp++,
+}
+}
+int main (void)
+{
+ft_print_alphabet();
+return (0);
