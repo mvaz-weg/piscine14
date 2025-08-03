@@ -1,0 +1,6 @@
+ft_ putchar 
+Esxreva uma função que mostre o caractere passado como paramentro 
+deve ser prototipada da seguinte maneira:
+void   ft_putchar (char c);
+para mostrar o caractere, deve usar a funçao write da seguinte maneira 
+write (1, &c, 1);
