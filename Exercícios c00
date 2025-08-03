@@ -4,3 +4,13 @@ deve ser prototipada da seguinte maneira:
 void   ft_putchar (char c);
 para mostrar o caractere, deve usar a funçao write da seguinte maneira 
 write (1, &c, 1);
+
+vim ft_putchar 
+void   ft_putchar (char c);
+{
+write (1, &c, 1);
+}
+/*
+int   main(void)
+ft_putchar('c')
+return (0);
