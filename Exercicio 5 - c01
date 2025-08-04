@@ -1,0 +1,3 @@
+Escreva uma função que mostre os caracteres de uma string no ecrã.
+Devera ser prototipada da seguinte maneira:
+void ft_putstr(char *str);
