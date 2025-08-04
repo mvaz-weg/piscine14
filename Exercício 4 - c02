@@ -2,3 +2,41 @@ Escreva uma função quw retorne 1 se a string passada como paramentro só conti
 Devera ser prototipada da seguinte maneira: 
 int ft_str_is_lowercase(char *str);
 Devera retornar 1 se a str for uma string vazia 
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_lowercase.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/29 20:57:51 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/07/31 14:03:32 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+
+int     ft_str_is_alpha(char *str)
+{
+        int     i;
+
+        i = 0;
+        while (str [i] != '\0')
+        {
+                if (!(str[i] >= 'a' && str[i] <= 'z'))
+                {
+                        return (o);
+                }
+                i++;
+        }
+        return (1);
+}
+/*
+int     main(void)
+{
+        printf("%d", ft_str_is_lowercase("mayume"));
+        printf("\n%d", ft_str_is_lowercase("maYume"));
+        printf("\n%d", ft_str_is_lowercase("-_987mayume765"));
+}*/
+~                                                                    
