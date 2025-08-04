@@ -1,0 +1,3 @@
+Escreva uma função que retorne 1 se a string passada como paramentro só contiver numeros e retorne 0 se a função contiver outros tipos de caracteres. 
+Devera ser prototipada da seguinte maneira: 
+int ft_str_is_numeric(char *str);
