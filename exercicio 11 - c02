@@ -1,0 +1,10 @@
+
+Escreva uma função que mostre uma string de caracteres na tela. Se essa string
+contiver caracteres não imprimíveis, eles devem ser mostrados na forma hexadecimal
+(em minúsculo) precedidos por um "backslash".
+• Por exemplo, com este parâmetro:
+Ola\nesta bem?
+• A função deverá mostrar:
+Ola\0aesta bem?
+• Deverá ser prototipada da seguinte maneira:
+void ft_putstr_non_printable(char *str);
