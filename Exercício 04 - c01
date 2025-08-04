@@ -1,0 +1,5 @@
+Escreva uma função ft_ultimate_div_mod que tenha a seguinte prototipagem 
+void ft_ultimate_div_mod(int *a, int *b);
+a funçao divode o paramentro a por paramentro b.
+o resultado da divisão fica armazenado no inteiro apontado por a. 
+o resto da divisão fica armazenado no intoero apontado por b. 
