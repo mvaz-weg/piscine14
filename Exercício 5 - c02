@@ -2,3 +2,41 @@ Escreva uma função que retorne 1 se a string passada como paramentro só conti
 Devera ser prototipada da seguinte maneira: 
 int_ ft str_is_ uppercase(char *str) 
 Is should return 1 if str is empty. 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_uppercase.c                              :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/29 21:05:03 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/07/31 11:45:45 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+
+int     ft_str_is_uppercase(char *str)
+{
+        int     i;
+
+        i = 0;
+        while (str[i] != '\0')
+        {
+                if (!(str[i] >= 'A' && str[i] <= 'Z'))
+                {
+                        return (0);
+                }
+                i++;
+        }
+        return (1);
+}
+
+/*int   main(void)
+{
+        printf("%d\n", ft_str_is_uppercase("MAYUMEEE"));
+        printf("%d\n", ft_str_is_uppercase("MAYUMEeE"));
+        printf("%d\n", ft_str_is_uppercase("12345MAYume789"));
+        return (0);
+}*/
+~                                                                          
