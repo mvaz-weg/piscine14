@@ -1,0 +1,3 @@
+Reproduzir de forma identica o funcionamento da função strcpy
+Devera ser prototipada da seguinte maneira
+char *ft_strycpy(char *dest, char *src);
