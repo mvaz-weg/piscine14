@@ -1,0 +1,4 @@
+Escreva uma função quw retorne 1 se a string passada como paramentro so contiver caracteres imprimiveis e retorne 0 se a função conttivewr outrros tipos de caracteres
+Devera ser prototipada da seguinte maneira 
+int ft_str_is_printable (char *str);
+is should return 1 if str is empty
