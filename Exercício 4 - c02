@@ -1,0 +1,4 @@
+Escreva uma função quw retorne 1 se a string passada como paramentro só contiver caracteres alfabeticos minusculos e retorne 0 se a função cintiver outros tipos de caracteres 
+Devera ser prototipada da seguinte maneira: 
+int ft_str_is_lowercase(char *str);
+Devera retornar 1 se a str for uma string vazia 
