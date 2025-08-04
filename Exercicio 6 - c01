@@ -1,0 +1,3 @@
+Escreva uma função que conte e retorne o numero de caracteres de uma string.
+Devera ser prototipada da seguinte maneira.
+int ft_strlen
