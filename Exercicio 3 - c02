@@ -1,0 +1,44 @@
+Escreva uma função que retorne 1 se a string passada como paramentro só contiver numeros e retorne 0 se a função contiver outros tipos de caracteres. 
+Devera ser prototipada da seguinte maneira: 
+int ft_str_is_numeric(char *str);
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_str_is_numeric.c                                :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz@student.42.com>             +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/07/29 20:18:36 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/07/31 14:03:10 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+
+int     ft_str_is_numeric(char *str)
+{
+        int     i;
+
+        i = 0;
+        while (str[i] != '\0')
+        {
+                if (!(str[i] >= '0' && str [i] <= '9'))
+                {
+                        return (0);
+                }
+                i++;
+        }
+        return (1);
+}
+/*
+int     main(void)
+{
+        printf("%d", ft_str_is_numeric("7548383490358439"));
+        printf("\n%d", ft_str_is_numeric("987654321a123456789"));
+        printf("\n%d", ft_str_is_numeric("-_acbdario8oiradbca"));
+        return (0);
+}*/
+~                                                                                                       
+~                                                                                                       
+~                                                        
