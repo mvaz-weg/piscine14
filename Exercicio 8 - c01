@@ -1,0 +1,15 @@
+Escreva uma função que ordene o array de inteiros em ordem crescente 
+Os paramentros dso um ponteiro para inteiro e o numero de inteiros no array. 
+a função devera ser prototipada da seguinte maneira. 
+void ft_sort_int_tab.c 
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sort_int_tab.c                                  :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/03 10:42:00 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/03 10:42:00 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
