@@ -1,0 +1,52 @@
+Reproduzir de forma idêntica o funcionamento da função strncat (man strncat).
+• Deve ser prototipada da seguinte maneira:
+char *ft_strncat(char *dest, char *src, unsigned int nb
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strncat.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/04 18:29:16 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/05 11:14:59 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+
+char    *ft_strncat(char *dest, char *src, unsigned int nb)
+{
+        unsigned int    c;
+        unsigned int    k;
+
+        c = 0;
+        while (dest[c])
+                c++;
+        k = 0;
+        while (k < nb && src[k])
+        {
+                dest[c] = src[k];
+                c++;
+                k++;
+        }
+        dest[c] = '\0';
+        return (dest);
+}
+/*
+int     main(void)
+{
+        char src[] = "hello";
+        char dest[9] = "Hellow";
+
+// printf("%s\n", ft_strncat(dest, src, 2));
+// printf("%s\n", ft_strncat(dest, src, 1));
+   printf("%s\n", ft_strncat(dest, src, 3));
+   printf("%lu\n", sizeof(dest));
+   return (0);
+}
+*/
+/*Há uma falha nessa função: ela compila toda a string de origem,
+ o que resulta em um comportamento imprevisível.*/
+~                                                           
