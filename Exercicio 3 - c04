@@ -1,0 +1,73 @@
+Escreve uma função que converta o início da string para a sua representação em inteiro
+• A string pode começar por um número arbitrário de ’white space’ (como definido por o
+isspace(3))
+• A string pode ser seguido por um número arbitrário de sinais + ou -. O sinal - vai mudar
+o sinal do inteiro retornado baseado no número par ou impar de sinais -.
+• Por fim, a string deverá ser seguido por qualquer número da base 10
+• A função deve ler a string, desde que a string siga as regras e retorne o número encontrado
+até então.
+• Não deves considerar os overflows ou underflows, o resultado é considerado indefinido
+nesses casos.
+• Veja um exemplo de um programa que mostra o retorno do atoi:
+$>./a.out " ---+--+1234ab567"
+-1234
+• Deve ser prototipada da seguinte maneira:
+int ft_atoi(char *str);
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/05 15:16:15 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/05 15:18:28 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+//#include <stdio.h>
+//#include <unistd.h>
+
+int     whitespaces(char *str, int *ptr_i)
+{
+        int     count;
+        int     i;
+
+        i = 0;
+        count = 1;
+        while ((str[i] >= 9 && str[i] <= 13) || str[i] == 32)
+                i++;
+        while (str[i] == 43 || str[i] == 45)
+        {
+                if (str[i] == 45)
+                        count *= -1;
+                i++;
+        }
+        *ptr_i = i;
+        return (count);
+}
+
+int     ft_atoi(char *str)
+{
+        int     sign;
+        int     result;
+        int     i;
+
+        result = 0;
+        sign = whitespaces(str, &i);
+        while (str[i] && str[i] >= '0' && str[i] <= '9')
+        {
+                result = result * 10 + (str[i] - '0');
+                i++;
+        }
+        return (result * sign);
+}
+/*
+int     main(void)
+{
+        char    *str = "   ---+--+01234506789ab567";
+        int             nb;
+
+        nb = ft_atoi(str);
+        ft_putnbr(nb);
+        ft_putchar('\n');
+        return (0);
