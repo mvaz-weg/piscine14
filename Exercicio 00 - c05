@@ -9,33 +9,39 @@ int ft_iterative_factorial(int nb)
 /*                                                        :::      ::::::::   */
 /*   ft_iterative_factorial.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mvaz-weg <mvaz-weg@student.42.com>          +#+  +:+       +#+        */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/08/06 10:36:46 by mvaz-weg          #+#    #+#             */
-/*   Updated: 2025/08/06 11:02:53 by mvaz-weg         ###   ########.fr       */
+/*   Updated: 2025/08/06 19:14:36 by mvaz-weg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 //#include <stdio.h>
 
-int     ft_iterative_factorial(int nb)
+int	ft_iterative_factorial(int nb)
 {
-        int     result;
+	int	fat;
 
-        if (nb < 0)
-                return (0);
-        result = 1;
-        while (nb > 0)
-        {
-                result *= nb;
-                nb--;
-        }
-        return (result);
+	if (nb < 0)
+		return (0);
+	if (nb == 0)
+		return (1);
+	fat = 1;
+	while (nb > 1)
+	{
+		fat *= nb;
+		nb--;
+	}
+	return (fat);
 }
 /*
-int main (void)
+int	main(void)
 {
-        printf("%i", ft_iterative_factorial(3));
-        return (0);
-}
-*/
+	printf ("Fatorial de 5: %d\n", ft_iterative_factorial(5));
+	printf ("Fatorial de 8: %d\n", ft_iterative_factorial(8));
+	printf ("Fatorial de 15: %d\n", ft_iterative_factorial(15));
+	printf ("Fatorial de -1: %d\n", ft_iterative_factorial(-1));
+	return (0);
+}*/
+
+
