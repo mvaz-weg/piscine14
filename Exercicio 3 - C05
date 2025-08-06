@@ -1,0 +1,39 @@
+screva uma função recursiva que retorne uma potência de um número.
+• Uma potência menor que 0 retorna 0.
+• Não deve gerir o "int overflow", o retorno da função será indefinido.
+• Nós decidimos que a potência de 0 sobre 0 deve retornar 1.
+• Ela deverá ser prototipada da seguinte maneira:
+int ft_recursive_power(int nb, int power
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_recursive_power.c                               :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/06 18:56:43 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/06 19:29:25 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+
+int	ft_recursive_power(int nb, int power)
+{
+	if (power < 0)
+		return (0);
+	if (power == 0)
+		return (1);
+	return (nb * ft_recursive_power(nb, power - 1));
+}
+/*
+int	main(void)
+{
+	printf ("2 to the 5th power: %d\n", ft_recursive_power(2, 5));
+	printf ("3 to the 7th power: %d\n", ft_recursive_power(3, 7));
+	printf ("2 to the 0th power: %d\n", ft_recursive_power(2, 0));
+	printf ("0 to the 0 power: %d\n", ft_recursive_power(0, 0));
+	printf ("2 to the -3rd power: %d\n", ft_recursive_power(2, -3));
+	return (0);
+}*/
