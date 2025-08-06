@@ -1,0 +1,44 @@
+Escreva uma função que retorne a raiz quadrada inteira de um número se ela existir,
+e 0 se a raiz quadrada for um número irracional.
+• Ela deverá ser prototipada da seguinte maneira:
+int ft_sqrt(int nb)
+
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_sqrt.c                                          :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/06 19:03:44 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/06 19:30:32 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+
+int	ft_sqrt(int nb)
+{
+	int	c;
+
+	c = 0;
+	if (nb < 0)
+		return (0);
+	while (c * c <= nb && c <= 46340)
+	{
+		if (c * c == nb)
+			return (c);
+		c++;
+	}
+	return (0);
+}
+/*
+int	main(void)
+{
+	printf ("Square root of 25 is %d.\n", ft_sqrt(25));
+	printf ("Square root of 81 is %d.\n", ft_sqrt(81));
+	printf ("Square root of 2.147.395.600 is %d.\n", ft_sqrt(2147395600));
+//	printf ("Square root of 12.147.395.600 is %d.\n", ft_sqrt(12147395600));
+//	last one doesn't compile (bigger than int variable accepts)
+	return (0);
+}*/
