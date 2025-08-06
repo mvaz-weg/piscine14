@@ -1,0 +1,54 @@
+Escreva uma função que retorne a raiz quadrada inteira de um número se ela existir,
+e 0 se a raiz quadrada for um número irracional.
+• Ela deverá ser prototipada da seguinte maneira:
+int ft_sqrt(int nb)
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_is_prime.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mvaz-weg <mvaz-weg@student.42.com>         +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2025/08/06 19:07:02 by mvaz-weg          #+#    #+#             */
+/*   Updated: 2025/08/06 19:31:02 by mvaz-weg         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+//#include <stdio.h>
+
+int	ft_is_prime(int nb)
+{
+	int	c;
+	int	tot;
+
+	if (nb < 2)
+		return (0);
+	else
+	{
+		tot = 0;
+		c = 1;
+		while (c <= nb)
+		{
+			if (nb % c == 0)
+				tot++;
+			c++;
+		}
+		if (tot == 2)
+			return (1);
+		else
+			return (0);
+	}
+	return (0);
+}
+/*
+int	main(void)
+{
+	printf ("Checking for primes. 1 for prime, 0 if not.\n");
+	printf ("Number 7: %d\n", ft_is_prime(7));
+	printf ("Number 12: %d\n", ft_is_prime(12));
+	printf ("Number 2: %d\n", ft_is_prime(2));
+	printf ("Number 21: %d\n", ft_is_prime(21));
+	printf ("Number 83: %d\n", ft_is_prime(83));
+	printf ("Number 47: %d\n", ft_is_prime(47));
+	return (0);
+}*/
